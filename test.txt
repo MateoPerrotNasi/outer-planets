@@ -1,0 +1,288 @@
+I have an exoplanet dataset with all those columns, tell me what i can do with it so i can implement a machine learning algorithm to it.
+
+Planet Name
+Host Name
+Planet Letter
+HD ID
+HIP ID
+TIC ID
+GAIA ID
+Default Parameter Set
+Number of Stars
+Number of Planets
+Number of Moons
+Circumbinary Flag
+Discovery Method
+Discovery Year
+Discovery Reference
+Discovery Publication Date
+Discovery Locale
+Discovery Facility
+Discovery Telescope
+Discovery Instrument
+Detected by Radial Velocity Variations
+Detected by Pulsar Timing Variations
+Detected by Pulsation Timing Variations
+Detected by Transits
+Detected by Astrometric Variations
+Detected by Orbital Brightness Modulations
+Detected by Microlensing
+Detected by Eclipse Timing Variations
+Detected by Imaging
+Detected by Disk Kinematics
+Solution Type
+Controversial Flag
+Planetary Parameter Reference
+Orbital Period [days]
+Orbital Period Upper Unc. [days]
+Orbital Period Lower Unc. [days]
+Orbital Period Limit Flag
+Orbit Semi-Major Axis [au]
+Orbit Semi-Major Axis Upper Unc. [au]
+Orbit Semi-Major Axis Lower Unc. [au]
+ Orbit Semi-Major Axis Limit Flag
+ Planet Radius [Earth Radius]
+ Planet Radius Upper Unc. [Earth Radius]
+ Planet Radius Lower Unc. [Earth Radius]
+ Planet Radius Limit Flag
+ Planet Radius [Jupiter Radius]
+ Planet Radius Upper Unc. [Jupiter Radius]
+ Planet Radius Lower Unc. [Jupiter Radius]
+ Planet Radius Limit Flag
+ Planet Mass [Earth Mass]
+ Planet Mass [Earth Mass] Upper Unc.
+ Planet Mass [Earth Mass] Lower Unc.
+ Planet Mass [Earth Mass] Limit Flag
+ Planet Mass [Jupiter Mass]
+ Planet Mass [Jupiter Mass] Upper Unc.
+ Planet Mass [Jupiter Mass] Lower Unc.
+ Planet Mass [Jupiter Mass] Limit Flag
+ Planet Mass*sin(i) [Earth Mass]
+ Planet Mass*sin(i) [Earth Mass] Upper Unc.
+ Planet Mass*sin(i) [Earth Mass] Lower Unc.
+ Planet Mass*sin(i) [Earth Mass] Limit Flag
+ Planet Mass*sin(i) [Jupiter Mass]
+ Planet Mass*sin(i) [Jupiter Mass] Upper Unc.
+ Planet Mass*sin(i) [Jupiter Mass] Lower Unc.
+ Planet Mass*sin(i) [Jupiter Mass] Limit Flag
+ Planet Mass*sin(i)/sin(i) [Earth Mass]
+ Planet Mass*sin(i)/sin(i) [Earth Mass] Upper Unc.
+ Planet Mass*sin(i)/sin(i) [Earth Mass] Lower Unc.
+ Planet Mass*sin(i)/sin(i) [Earth Mass] Limit Flag
+ Planet Mass*sin(i)/sin(i) [Jupiter Mass]
+ Planet Mass*sin(i)/sin(i) [Jupiter Mass] Upper Unc.
+ Planet Mass*sin(i)/sin(i) [Jupiter Mass] Lower Unc.
+ Planet Mass*sin(i)/sin(i) [Jupiter Mass] Limit Flag
+ Planet Mass or Mass*sin(i) [Earth Mass]
+ Planet Mass or Mass*sin(i) [Earth Mass] Upper Unc.
+ Planet Mass or Mass*sin(i) [Earth Mass] Lower Unc.
+ Planet Mass or Mass*sin(i) [Earth Mass] Limit Flag
+ Planet Mass or Mass*sin(i) [Jupiter Mass]
+ Planet Mass or Mass*sin(i) [Jupiter Mass] Upper Unc.
+ Planet Mass or Mass*sin(i) [Jupiter Mass] Lower Unc.
+ Planet Mass or Mass*sin(i) [Jupiter Mass] Limit Flag
+ Planet Mass or Mass*sin(i) Provenance
+ Planet Density [g/cm**3]
+ Planet Density Upper Unc. [g/cm**3]
+ Planet Density Lower Unc. [g/cm**3]
+ Planet Density Limit Flag
+ Eccentricity
+Eccentricity Upper Unc.
+Eccentricity Lower Unc.
+ Eccentricity Limit Flag
+ Insolation Flux [Earth Flux]
+ Insolation Flux Upper Unc. [Earth Flux]
+ Insolation Flux Lower Unc. [Earth Flux]
+ Insolation Flux Limit Flag
+ Equilibrium Temperature [K]
+ Equilibrium Temperature Upper Unc. [K]
+ Equilibrium Temperature Lower Unc. [K]
+ Equilibrium Temperature Limit Flag
+ Inclination [deg]
+ Inclination Upper Unc. [deg]
+ Inclination Lower Unc. [deg]
+ Inclination Limit Flag
+ Transit Midpoint [days]
+ Transit Midpoint Upper Unc. [days]
+ Transit Midpoint Lower Unc. [days]
+ Transit Midpoint Limit Flag
+ Time Reference Frame and Standard
+ Data show Transit Timing Variations
+ Impact Parameter
+ Impact Parameter Upper Unc.
+ Impact Parameter Lower Unc.
+ Impact Parameter Limit Flag
+ Transit Depth [%]
+ Transit Depth Upper Unc. [%]
+ Transit Depth Lower Unc. [%]
+ Transit Depth Limit Flag
+ Transit Duration [hours]
+ Transit Duration Upper Unc. [hours]
+ Transit Duration Lower Unc. [hours]
+ Transit Duration Limit Flag
+ Ratio of Semi-Major Axis to Stellar Radius
+ Ratio of Semi-Major Axis to Stellar Radius Upper Unc.
+ Ratio of Semi-Major Axis to Stellar Radius Lower Unc.
+ Ratio of Semi-Major Axis to Stellar Radius Limit Flag
+ Ratio of Planet to Stellar Radius
+ Ratio of Planet to Stellar Radius Upper Unc.
+ Ratio of Planet to Stellar Radius Lower Unc.
+ Ratio of Planet to Stellar Radius Limit Flag
+ Occultation Depth [%]
+ Occultation Depth Upper Unc. [%]
+ Occultation Depth Lower Unc. [%]
+ Occultation Depth Limit Flag
+ Epoch of Periastron [days]
+ Epoch of Periastron Upper Unc. [days]
+ Epoch of Periastron Lower Unc. [days]
+ Epoch of Periastron Limit Flag
+ Argument of Periastron [deg]
+ Argument of Periastron Upper Unc. [deg]
+ Argument of Periastron Lower Unc. [deg]
+ Argument of Periastron Limit Flag
+ Radial Velocity Amplitude [m/s]
+ Radial Velocity Amplitude Upper Unc. [m/s]
+ Radial Velocity Amplitude Lower Unc. [m/s]
+ Radial Velocity Amplitude Limit Flag
+ Projected Obliquity [deg]
+Projected Obliquity Upper Unc. [deg]
+Projected Obliquity Lower Unc. [deg]
+Projected Obliquity Limit Flag
+Obliquity [deg]
+Obliquity Upper Unc. [deg]
+Obliquity Lower Unc. [deg]
+Obliquity Limit Flag
+ Stellar Parameter Reference
+ Spectral Type
+ Stellar Effective Temperature [K]
+ Stellar Effective Temperature Upper Unc. [K]
+ Stellar Effective Temperature Lower Unc. [K]
+ Stellar Effective Temperature Limit Flag
+ Stellar Radius [Solar Radius]
+ Stellar Radius Upper Unc. [Solar Radius]
+ Stellar Radius Lower Unc. [Solar Radius]
+ Stellar Radius Limit Flag
+ Stellar Mass [Solar mass]
+ Stellar Mass Upper Unc. [Solar mass]
+ Stellar Mass Lower Unc. [Solar mass]
+ Stellar Mass Limit Flag
+ Stellar Metallicity [dex]
+ Stellar Metallicity Upper Unc. [dex]
+ Stellar Metallicity Lower Unc. [dex]
+ Stellar Metallicity Limit Flag
+ Stellar Metallicity Ratio
+ Stellar Luminosity [log(Solar)]
+ Stellar Luminosity Upper Unc. [log(Solar)]
+ Stellar Luminosity Lower Unc. [log(Solar)]
+ Stellar Luminosity Limit Flag
+ Stellar Surface Gravity [log10(cm/s**2)]
+ Stellar Surface Gravity Upper Unc. [log10(cm/s**2)]
+ Stellar Surface Gravity Lower Unc. [log10(cm/s**2)]
+ Stellar Surface Gravity Limit Flag
+ Stellar Age [Gyr]
+ Stellar Age Upper Unc. [Gyr]
+ Stellar Age Lower Unc. [Gyr]
+ Stellar Age Limit Flag
+ Stellar Density [g/cm**3]
+ Stellar Density Upper Unc. [g/cm**3]
+ Stellar Density Lower Unc. [g/cm**3]
+ Stellar Density Limit Flag
+ Stellar Rotational Velocity [km/s]
+ Stellar Rotational Velocity [km/s] Upper Unc.
+ Stellar Rotational Velocity [km/s] Lower Unc.
+ Stellar Rotational Velocity Limit Flag
+ Stellar Rotational Period [days]
+ Stellar Rotational Period [days] Upper Unc.
+ Stellar Rotational Period [days] Lower Unc.
+ Stellar Rotational Period Limit Flag
+ Systemic Radial Velocity [km/s]
+ Systemic Radial Velocity Upper Unc. [km/s]
+ Systemic Radial Velocity Lower Unc. [km/s]
+ Systemic Radial Velocity Limit Flag
+ System Parameter Reference
+ RA [sexagesimal]
+ RA [deg]
+ Dec [sexagesimal]
+ Dec [deg]
+ Galactic Latitude [deg]
+ Galactic Longitude [deg]
+ Ecliptic Latitude [deg]
+ Ecliptic Longitude [deg]
+ Total Proper Motion [mas/yr]
+ Total Proper Motion Upper Unc [mas/yr]
+ Total Proper Motion Lower Unc [mas/yr]
+ Proper Motion (RA) [mas/yr]
+ Proper Motion (RA) [mas/yr] Upper Unc
+ Proper Motion (RA) [mas/yr] Lower Unc
+ Proper Motion (Dec) [mas/yr]
+ Proper Motion (Dec) [mas/yr] Upper Unc
+ Proper Motion (Dec) [mas/yr] Lower Unc
+ Distance [pc]
+ Distance [pc] Upper Unc
+ Distance [pc] Lower Unc
+ Parallax [mas]
+ Parallax [mas] Upper Unc
+ Parallax [mas] Lower Unc
+ B (Johnson) Magnitude
+ B (Johnson) Magnitude Upper Unc
+ B (Johnson) Magnitude Lower Unc
+ V (Johnson) Magnitude
+ V (Johnson) Magnitude Upper Unc
+ V (Johnson) Magnitude Lower Unc
+ J (2MASS) Magnitude
+ J (2MASS) Magnitude Upper Unc
+ J (2MASS) Magnitude Lower Unc
+ H (2MASS) Magnitude
+ H (2MASS) Magnitude Upper Unc
+ H (2MASS) Magnitude Lower Unc
+ Ks (2MASS) Magnitude
+ Ks (2MASS) Magnitude Upper Unc
+ Ks (2MASS) Magnitude Lower Unc
+ u (Sloan) Magnitude
+ u (Sloan) Magnitude Upper Unc
+ u (Sloan) Magnitude Lower Unc
+ g (Sloan) Magnitude
+ g (Sloan) Magnitude Upper Unc
+ g (Sloan) Magnitude Lower Unc
+ r (Sloan) Magnitude
+ r (Sloan) Magnitude Upper Unc
+ r (Sloan) Magnitude Lower Unc
+ i (Sloan) Magnitude
+ i (Sloan) Magnitude Upper Unc
+ i (Sloan) Magnitude Lower Unc
+ z (Sloan) Magnitude
+ z (Sloan) Magnitude Upper Unc
+ z (Sloan) Magnitude Lower Unc
+ W1 (WISE) Magnitude
+ W1 (WISE) Magnitude Upper Unc
+ W1 (WISE) Magnitude Lower Unc
+ W2 (WISE) Magnitude
+ W2 (WISE) Magnitude Upper Unc
+ W2 (WISE) Magnitude Lower Unc
+ W3 (WISE) Magnitude
+ W3 (WISE) Magnitude Upper Unc
+ W3 (WISE) Magnitude Lower Unc
+ W4 (WISE) Magnitude
+ W4 (WISE) Magnitude Upper Unc
+ W4 (WISE) Magnitude Lower Unc
+ Gaia Magnitude
+ Gaia Magnitude Upper Unc
+ Gaia Magnitude Lower Unc
+ I (Cousins) Magnitude
+ I (Cousins) Magnitude Upper Unc
+ I (Cousins) Magnitude Lower Unc
+ TESS Magnitude
+ TESS Magnitude Upper Unc
+ TESS Magnitude Lower Unc
+ Kepler Magnitude
+ Kepler Magnitude Upper Unc
+ Kepler Magnitude Lower Unc
+ Date of Last Update
+ Planetary Parameter Reference Publication Date
+ Release Date
+ Number of Notes
+ Number of Photometry Time Series
+ Number of Radial Velocity Time Series
+ Number of Stellar Spectra Measurements
+ Number of Emission Spectroscopy Measurements
+ Number of Transmission Spectroscopy Measurements

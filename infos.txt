@@ -1,0 +1,9 @@
+Colonnes utiles (selon GPT) :
+
+- Planet Name: Pour identifier la planète.
+- Host Name: Pour identifier l'étoile autour de laquelle la planète orbite.
+- Orbital Period [days]: La période orbitale de la planète autour de son étoile, qui est liée à sa distance par rapport à l'étoile.
+- Orbit Semi-Major Axis [au]: L'axe semi-majeur de l'orbite de la planète, qui est également lié à sa distance par rapport à l'étoile.
+- Stellar Effective Temperature [K]: La température effective de l'étoile hôte, qui est cruciale pour déterminer la zone habitable.
+- Equilibrium Temperature [K]: La température d'équilibre de la planète, qui dépend de sa distance par rapport à l'étoile.
+- Insolation Flux [Earth Flux]: Le flux d'insolation reçu par la planète, qui dépend de sa distance par rapport à l'étoile.
