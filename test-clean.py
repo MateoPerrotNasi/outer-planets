@@ -1,14 +1,12 @@
 import numpy as np
 import pandas as pd
+import matplotlib.pyplot as plt
 
+# Load the data
+data = pd.read_csv('data/all_exoplanets_2021.csv')
 
-def test_clean():
-    # Load the data
-    df = pd.read_csv('PS_2024.05.16_14.06.35.csv')
-    # Drop rows with missing values
-    # df = df.dropna()
-    # Display stats
-    print(df.describe())
+# Drop the rows with missing values
+data = data.dropna()
 
-
-test_clean()
+print(data.head())
+print(data.describe())
