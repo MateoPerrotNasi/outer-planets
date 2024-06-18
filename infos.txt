@@ -7,3 +7,65 @@ Colonnes utiles (selon GPT) :
 - Stellar Effective Temperature [K]: La température effective de l'étoile hôte, qui est cruciale pour déterminer la zone habitable.
 - Equilibrium Temperature [K]: La température d'équilibre de la planète, qui dépend de sa distance par rapport à l'étoile.
 - Insolation Flux [Earth Flux]: Le flux d'insolation reçu par la planète, qui dépend de sa distance par rapport à l'étoile.
+
+
+Graphs :
+À partir des données d'exoplanètes et en sachant si une planète est dans la "zone habitable" (Goldilocks zone) grâce à un algorithme de classification, nous pouvons créer plusieurs types de graphiques pour explorer et visualiser ces informations. Voici quelques idées de visualisations :
+
+Histogramme des méthodes de découverte :
+Afficher la distribution des exoplanètes découvertes par différentes méthodes.
+
+Répartition des années de découverte :
+Un graphique en barres ou un histogramme montrant le nombre de découvertes d'exoplanètes par année.
+
+Diagramme de dispersion des températures d'équilibre et flux d'insolation :
+Un scatter plot montrant la relation entre la température d'équilibre et le flux d'insolation.
+
+Répartition des types spectraux des étoiles hôtes :
+Un histogramme des types spectraux des étoiles hôtes des exoplanètes.
+
+Distribution des périodes orbitales :
+Un histogramme ou un box plot des périodes orbitales des exoplanètes.
+
+Graphique en dispersion de la masse des planètes vs. la distance de leur étoile hôte :
+Un scatter plot montrant la masse des planètes en fonction de la distance à leur étoile hôte.
+
+Répartition des exoplanètes dans la zone habitable :
+Un diagramme de Venn ou un graphique en barres comparant le nombre d'exoplanètes dans la zone habitable et en dehors.
+
+Diagramme en boîte des températures stellaires :
+Un box plot des températures effectives des étoiles hôtes.
+
+Diagramme de corrélation des caractéristiques stellaires :
+Une matrice de corrélation pour visualiser les relations entre les différentes caractéristiques stellaires (température, masse, rayon, etc.).
+
+Répartition de la distance des exoplanètes :
+Un histogramme ou un graphique en barres montrant la distribution des distances des exoplanètes par rapport à la Terre.
+
+Comparaison des caractéristiques des planètes dans la zone habitable vs. hors de la zone habitable :
+Un ensemble de box plots ou de scatter plots pour comparer des caractéristiques comme la masse, la température d'équilibre, etc.
+
+
+story telling :
+
+Introduction aux Modèles
+Présente les modèles de machine learning que tu as choisis.
+Explique brièvement comment ils fonctionnent et leur pertinence pour l'analyse des exoplanètes.
+
+Prédiction de la Détection d'Exoplanètes
+Montre les résultats du modèle de régression logistique ou d'arbre de décision.
+Interprète les résultats et discute des implications pour la détection future d'exoplanètes.
+
+Prédiction de la Température d'Équilibre
+Présente les résultats du modèle de régression linéaire.
+Discute des prédictions et de leur précision, ainsi que des facteurs influençant la température d'équilibre.
+
+Classification des Méthodes de Découverte
+Montre les résultats du modèle de forêt aléatoire ou de SVM.
+Explique les résultats et comment les caractéristiques des exoplanètes peuvent prédire la méthode de découverte.
+
+Conclusion et Perspectives
+Résume les découvertes et l'importance des modèles de machine learning dans l'étude des exoplanètes.
+Discute des futures applications possibles et des améliorations potentielles des modèles.
+
+En suivant cette structure, tu pourras intégrer les modèles de machine learning de manière cohérente et informative dans ton data storytelling, en offrant des perspectives prédictives et analytiques sur les données des exoplanètes.
