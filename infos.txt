@@ -69,3 +69,40 @@ Résume les découvertes et l'importance des modèles de machine learning dans l
 Discute des futures applications possibles et des améliorations potentielles des modèles.
 
 En suivant cette structure, tu pourras intégrer les modèles de machine learning de manière cohérente et informative dans ton data storytelling, en offrant des perspectives prédictives et analytiques sur les données des exoplanètes.
+
+
+
+
+Introduction
+Présentation du sujet et de son importance.
+Brève explication des données disponibles et de ce qui sera exploré.
+
+Chronologie des Découvertes
+Graphiques montrant l'évolution du nombre de découvertes par année.
+Discussion sur les grandes étapes et les méthodes utilisées.
+
+Analyse des Caractéristiques des Exoplanètes
+Graphiques sur les périodes orbitales, masses et autres caractéristiques.
+Interprétation des résultats et discussion sur les implications.
+
+Habitabilité et Conditions des Exoplanètes
+Exploration des flux de rayonnement et des températures.
+Discussion sur les exoplanètes potentielles habitables.
+
+Influence des Étoiles Hôtes
+Analyse des types spectraux, températures et métallicités stellaires.
+Graphiques et explications sur leur influence sur les exoplanètes.
+
+Distances et Observabilité
+Cartes et graphiques des distances des exoplanètes.
+Discussion sur les défis d'observation.
+
+Cas d'Études et Histoires Remarquables
+Présentation de quelques exoplanètes spécifiques.
+Histoires et contributions des différentes installations de découverte.
+
+Conclusion
+Récapitulatif des points principaux.
+Perspectives futures dans la recherche des exoplanètes.
+
+En utilisant des visualisations graphiques, des cartes et des analyses statistiques, tu peux rendre ton storytelling captivant et informatif. Assure-toi de contextualiser les données et d'expliquer les termes techniques pour rendre ton récit accessible à tous.
