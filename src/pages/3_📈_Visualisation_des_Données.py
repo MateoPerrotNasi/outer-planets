@@ -105,6 +105,17 @@ st.write("""
 Ce graphique montre comment sont réparties les périodes orbitales des exoplanètes, fournissant des insights sur la diversité des systèmes planétaires découverts. Les périodes orbitales peuvent varier de quelques jours à plusieurs années, ce qui peut indiquer la distance des exoplanètes par rapport à leur étoile hôte et leurs conditions orbitales.
 """)
 
+# GRAPH 3
+st.header("Distribution du type d'Étoile Hôte")
+# Graphique de distribution des types d'étoiles hôtes
+fig_host_types = px.histogram(filtered_data, x='Spectral Type',
+                                title='Distribution des Types Spectraux des Étoiles Hôtes')
+st.plotly_chart(fig_host_types)
+
+st.write("""
+Ce graphique montre la distribution des types spectraux des étoiles hôtes des exoplanètes, ce qui est important car les étoiles de différents types peuvent avoir des caractéristiques différentes, telles que la taille, la température et la luminosité. Les étoiles plus massives et plus chaudes peuvent avoir des effets significatifs sur les exoplanètes qui les entourent, modifiant ainsi leur habitabilité potentielle.
+""")
+
 # GRAPH 4
 st.header("Influence des Étoiles Hôtes")
 # Graphique de distribution des températures des étoiles hôtes
