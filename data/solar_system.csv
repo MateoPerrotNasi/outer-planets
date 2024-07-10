@@ -1,0 +1,9 @@
+No.,Planet Name,Planet Host,Num Stars,Num Planets,Discovery Method,Discovery Year,Discovery Facility,Orbital Period Days,Orbit Semi-Major Axis,Mass,Eccentricity,Insolation Flux,Equilibrium Temperature,Spectral Type,Stellar Effective Temperature,Stellar Radius,Stellar Mass,Stellar Metallicity,Stellar Metallicity Ratio,Stellar Surface Gravity,Distance,Gaia Magnitude
+100000,Mercury,Sun,1,8,Transit,1543,Observatoire Copernic,88.0,0.39,0.055,0.205,9126.0,340.0,G2V,5778.0,1.0,1.0,0.0122,1,274.0,0.39,-26.74
+200000,Venus,Sun,1,8,Transit,1543,Observatoire Copernic,225.0,0.72,0.815,0.007,2611.0,735.0,G2V,5778.0,1.0,1.0,0.0122,1,274.0,0.72,-26.74
+300000,Earth,Sun,1,8,Transit,1543,Observatoire Copernic,365.25,1.0,1.0,0.0167,1361.0,255.0,G2V,5778.0,1.0,1.0,0.0122,1,274.0,1.0,-26.74
+400000,Mars,Sun,1,8,Transit,1543,Observatoire Copernic,687.0,1.52,0.107,0.093,589.0,210.0,G2V,5778.0,1.0,1.0,0.0122,1,274.0,1.52,-26.74
+500000,Jupiter,Sun,1,8,Transit,1543,Observatoire Copernic,4333.0,5.2,317.8,0.049,50.0,124.0,G2V,5778.0,1.0,1.0,0.0122,1,274.0,5.2,-26.74
+600000,Saturn,Sun,1,8,Transit,1543,Observatoire Copernic,10759.0,9.58,95.2,0.056,15.0,78.0,G2V,5778.0,1.0,1.0,0.0122,1,274.0,9.58,-26.74
+700000,Uranus,Sun,1,8,Transit,1543,Observatoire Copernic,30688.0,19.22,14.6,0.046,4.0,59.0,G2V,5778.0,1.0,1.0,0.0122,1,274.0,19.22,-26.74
+800000,Neptune,Sun,1,8,Transit,1543,Observatoire Copernic,60182.0,30.05,17.2,0.01,1.5,48.0,G2V,5778.0,1.0,1.0,0.0122,1,274.0,30.05,-26.74
