@@ -97,7 +97,7 @@ st.write("""
 ### Visualisation Interactive des Clusters avec Plotly
 Ce graphique interactif permet d'explorer les clusters en survolant les points pour voir les détails des exoplanètes. Il montre la répartition des exoplanètes selon l'axe semi-majeur et la température d'équilibre, avec une coloration par cluster.
 """)
-fig_plotly = px.scatter(cleaned_data, x='Orbit Semi-Major Axis', y='Equilibrium Temperature', color='Cluster',
+fig_plotly = px.scatter(cleaned_data[cleaned_data['Orbit Semi-Major Axis'] <= 8], x='Orbit Semi-Major Axis', y='Equilibrium Temperature', color='Cluster',
                         title='Clustering des Exoplanètes', labels={'Orbit Semi-Major Axis': 'Orbit Semi-Major Axis',
                                                                     'Equilibrium Temperature': 'Equilibrium Temperature'})
 st.plotly_chart(fig_plotly)
