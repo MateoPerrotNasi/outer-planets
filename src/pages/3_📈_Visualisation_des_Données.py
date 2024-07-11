@@ -50,17 +50,12 @@ if show_goldilock_zone:
     filtered_data['In Goldilock Zone'] = filtered_data['In Goldilock Zone'].astype(int)
     filtered_data = filtered_data[filtered_data['In Goldilock Zone'] == 1]
 
+# Filtrer les données pour les planètes avec une excentricité inférieure à 0.6
+filtered_data.loc[filtered_data["Eccentricity"] > 0.6, "In Goldilock Zone"] = 0
 
-# Fonction pour mapper les couleurs en fonction du nom de l'hôte de la planète
-def get_color(host_name):
-    if host_name == 'Sun':
-        return 'yellow'  # Couleur pour le système solaire
-    else:
-        return 'blue'  # Couleur par défaut pour les autres systèmes
+# Créer une nouvelle colonne pour la couleur des barres
+filtered_data['Color'] = filtered_data['In Goldilock Zone'].apply(lambda x: 'In Goldilock Zone' if x == 1 else 'Other Exoplanets')
 
-
-# Ajouter une colonne 'Color' basée sur le nom de l'hôte de la planète
-filtered_data['Color'] = filtered_data['Planet Host'].apply(get_color)
 
 # Affichage du système stellaire sélectionné
 st.write(f"Système stellaire sélectionné : **{system_choice}**")
@@ -91,14 +86,16 @@ if show_goldilock_zone:
 
 # Widget slider pour permettre à l'utilisateur de spécifier une limite supérieure pour les périodes orbitales
 max_orbital_period = st.slider("Limite supérieure pour les périodes orbitales (jours) :",
-                               min_value=0, max_value=200000, value=200000)
+                               min_value=0, max_value=50000, value=50000)
 
 # Filtrer les données pour les périodes orbitales inférieures ou égales à la limite supérieure spécifiée
 filtered_orbital_data = filtered_data[filtered_data['Orbital Period Days'] <= max_orbital_period]
 
 # Graphique de distribution des périodes orbitales avec la plage spécifiée par l'utilisateur
-fig_orbital_periods = px.histogram(filtered_orbital_data, x='Orbital Period Days',
-                                   title=f'Distribution des Périodes Orbitales des Exoplanètes (jusqu\'à {max_orbital_period} jours)')
+fig_orbital_periods = px.histogram(filtered_orbital_data[filtered_orbital_data["Orbital Period Days"] <= 50000], x='Orbital Period Days',
+                                   title=f'Distribution des Périodes Orbitales des Exoplanètes (jusqu\'à {max_orbital_period} jours)',
+                                   color='Color',
+                                   color_discrete_map={'In Goldilock Zone': 'yellow', 'Other Exoplanets': 'lightskyblue'})
 st.plotly_chart(fig_orbital_periods)
 
 st.write("""
@@ -109,7 +106,9 @@ Ce graphique montre comment sont réparties les périodes orbitales des exoplan�
 st.header("Distribution du type d'Étoile Hôte")
 # Graphique de distribution des types d'étoiles hôtes
 fig_host_types = px.histogram(filtered_data, x='Spectral Type',
-                                title='Distribution des Types Spectraux des Étoiles Hôtes')
+                              title='Distribution des Types Spectraux des Étoiles Hôtes',
+                              color='Color',
+                              color_discrete_map={'In Goldilock Zone': 'yellow', 'Other Exoplanets': 'lightskyblue'})
 st.plotly_chart(fig_host_types)
 
 st.write("""
@@ -119,8 +118,11 @@ Ce graphique montre la distribution des types spectraux des étoiles hôtes des 
 # GRAPH 4
 st.header("Influence des Étoiles Hôtes")
 # Graphique de distribution des températures des étoiles hôtes
-fig_stellar_temp = px.histogram(filtered_data, x='Stellar Effective Temperature',
-                                title='Distribution des Températures des Étoiles Hôtes')
+
+# Créer l'histogramme avec Plotly Express
+fig_stellar_temp = px.histogram(filtered_data[filtered_data["Stellar Effective Temperature"] <= 15000], x='Stellar Effective Temperature',
+                                title='Distribution des Températures des Étoiles Hôtes', color='Color',
+                                color_discrete_map={'In Goldilock Zone': 'yellow', 'Other Exoplanets': 'lightskyblue'})
 st.plotly_chart(fig_stellar_temp)
 
 st.write("""
@@ -130,8 +132,9 @@ Ce graphique montre comment les températures des étoiles hôtes varient, ce qu
 # GRAPH 5
 st.header("Distances et Observabilité")
 # Graphique de distribution des distances des exoplanètes
-fig_distances = px.histogram(filtered_data, x='Orbit Semi-Major Axis',
-                             title='Distribution des Distances des Exoplanètes')
+fig_distances = px.histogram(filtered_data[filtered_data["Orbit Semi-Major Axis"] <= 400], x='Orbit Semi-Major Axis',
+                             title='Distribution des Distances des Exoplanètes', color='Color',
+                             color_discrete_map={'In Goldilock Zone': 'yellow', 'Other Exoplanets': 'lightskyblue'})
 st.plotly_chart(fig_distances)
 
 st.write("""
@@ -139,6 +142,16 @@ Ce graphique montre la distribution des distances des exoplanètes en UA, illust
 """)
 
 # GRAPH 6
+st.header("Distribution de l'excentricité")
+# Graphique de distribution de l'excentricité des orbites des exoplanètes
+fig_eccentricity = px.histogram(filtered_data, x='Eccentricity',
+                                title='Distribution de l\'Excentricité des Orbites des Exoplanètes', color='Color',
+                                color_discrete_map={'In Goldilock Zone': 'yellow', 'Other Exoplanets': 'lightskyblue'})
+
+st.plotly_chart(fig_eccentricity)
+
+
+# GRAPH 7
 # Exemple spécifique de l'exoplanète Kepler-186 f
 planet_data = filtered_data[filtered_data['Planet Name'] == 'Kepler-186 f']
 
