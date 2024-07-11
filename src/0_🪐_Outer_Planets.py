@@ -16,6 +16,17 @@ def app():
     """)
 
     st.write("---")
+    st.write("""
+    Notre projet se compose de 6 différentes parties :
+    - **📊 Data Overview** : Aperçu du jeu de données des exoplanètes.
+    - **🌍 Système Solaire** : Exploration des exoplanètes dans notre propre système solaire.
+    - **🕰️ Découverte des Exoplanètes** : Analyse des découvertes d'exoplanètes au fil du temps.
+    - **🌟 Influence des Etoiles Hôtes** : Impact des étoiles hôtes sur les exoplanètes.
+    - **🌑 Caractéristiques des Exoplanètes** : Caractéristiques des exoplanètes découvertes.
+    - **☀️ Goldilock Zone**: Exploration de la zone habitable des exoplanètes.
+    """)
+
+    st.write("---")
     st.write("Projet réalisé par PERROT--NASI Matéo et TOMATIS Margot. Pour plus d'informations, vous pouvez nous "
              "retrouver sur nos github.")
 
