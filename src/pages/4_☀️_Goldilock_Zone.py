@@ -6,6 +6,9 @@ import seaborn as sns
 from sklearn.preprocessing import StandardScaler
 from sklearn.cluster import KMeans
 import plotly.express as px
+from sklearn.model_selection import train_test_split
+from sklearn.ensemble import RandomForestClassifier
+from sklearn.metrics import classification_report, confusion_matrix
 
 # Chargement des données
 data_path = './data/all_exoplanets_with_goldilock_zone.csv'
@@ -116,3 +119,53 @@ Ce graphique montre la répartition des planètes situées dans la Goldilock Zon
 fig_goldilocks = px.scatter(goldilocks_data, x='Orbit Semi-Major Axis', y='Equilibrium Temperature', color='Cluster',
                             title='Planètes dans la Goldilock Zone', labels={'Orbit Semi-Major Axis':'Orbit Semi-Major Axis', 'Equilibrium Temperature':'Equilibrium Temperature'})
 st.plotly_chart(fig_goldilocks)
+
+
+# CLUSTERING MODEL
+
+# Function to preprocess data
+def preprocess_data(df):
+    # Drop irrelevant columns if needed
+    df = df[['Orbital Period Days', 'Equilibrium Temperature', 'Stellar Effective Temperature',
+             'Stellar Radius', 'Stellar Mass', 'Stellar Metallicity', 'Stellar Metallicity Ratio',
+             'Stellar Surface Gravity', 'Distance', 'Gaia Magnitude', 'In Goldilock Zone']]
+
+    # Fill missing values if any
+    df = df.fillna(df.mean())  # Example: filling NaNs with mean values
+
+    return df
+
+
+# Function to normalize data
+def normalize_data(df):
+    scaler = StandardScaler()
+    df_scaled = scaler.fit_transform(df)
+    return df_scaled, scaler
+
+
+# Function to train K-means clustering model
+def train_kmeans_model(data, num_clusters):
+    kmeans = KMeans(n_clusters=num_clusters, random_state=42)
+    kmeans.fit(data)
+    return kmeans
+
+
+# Function to predict clusters for new data
+def predict_clusters(model, data_scaled):
+    return model.predict(data_scaled)
+
+
+# Fonction pour charger les datasets
+@st.cache
+def load_dataset(name):
+    if name == 'Dataset 1':
+        return pd.read_csv('./data/test_planets1.csv')
+    elif name == 'Dataset 2':
+        return pd.read_csv('./data/test_planets2.csv')
+
+
+# Sélection du dataset
+dataset_name = st.selectbox('Sélectionnez un dataset', ('Dataset 1', 'Dataset 2'))
+
+# Charger et prétraiter le dataset sélectionné
+data_selected = load_dataset(dataset_name)
