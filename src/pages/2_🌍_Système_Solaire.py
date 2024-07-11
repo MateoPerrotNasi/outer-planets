@@ -18,12 +18,7 @@ st.title("🌍 Système Solaire")
 # Introduction sur les zones habitables
 st.header("Exploration des Zones Habitables dans le Système Solaire")
 st.write("""
-Bienvenue dans notre exploration des zones habitables, aussi connues sous le nom de Goldilock Zones, dans notre propre système solaire. 
-Les zones habitables sont les régions autour des étoiles où les conditions sont "justes" pour permettre l'existence d'eau liquide à la surface d'une planète, 
-une condition essentielle pour la vie telle que nous la connaissons.
-
-Notre voyage commence par l'examen des planètes de notre système solaire. Nous utiliserons les données astronomiques pour identifier où se trouvent ces zones 
-et quelles planètes pourraient théoriquement supporter la vie.
+Le système solaire est notre propre système planétaire composé du Soleil, des huit planètes et de nombreux autres objets célestes. Dans cette section, nous allons explorer les caractéristiques des planètes du système solaire et déterminer les planètes qui pourraient être dans la zone habitable.
 """)
 
 # Afficher les premières lignes des données
