@@ -49,13 +49,8 @@ Ce graphique permet de visualiser comment le nombre de découvertes d'exoplanèt
 # Conversion de la colonne de date en format datetime si ce n'est pas déjà fait
 filtered_data['Discovery Year'] = pd.to_datetime(filtered_data['Discovery Year'], format='%Y', errors='coerce')
 
-# Agrégation par année et comptage des découvertes
-discovery_timeline = filtered_data.groupby(filtered_data['Discovery Year'].dt.year).size().reset_index(name='Nombre de Découvertes')
-
-# Création du graphique avec Plotly Express
-fig_timeline = px.line(discovery_timeline, x='Discovery Year', y='Nombre de Découvertes',
-                       title='Nombre de Découvertes d\'Exoplanètes par Année')
-st.plotly_chart(fig_timeline)
+fig = px.histogram(filtered_data, x='Discovery Year', title='Années de découverte')
+st.plotly_chart(fig)
 
 # GRAPH 2
 st.header("Méthodes de Découvertes")
