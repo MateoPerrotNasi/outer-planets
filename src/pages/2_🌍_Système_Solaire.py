@@ -12,7 +12,7 @@ st.set_page_config(page_title="Outer Planets", page_icon="🪐", layout="wide")
 # Sidebar avec logo
 st.sidebar.image("./OP-logo-2.png", use_column_width=True)
 
-# Titre de la section
+# Titre
 st.title("🌍 Système Solaire")
 
 # Introduction sur les zones habitables
@@ -21,7 +21,6 @@ st.write("""
 Le système solaire est notre propre système planétaire composé du Soleil, des huit planètes et de nombreux autres objets célestes. Dans cette section, nous allons explorer les caractéristiques des planètes du système solaire et déterminer les planètes qui pourraient être dans la zone habitable.
 """)
 
-# Afficher les premières lignes des données
 st.write(data.head())
 
 # Visualisation de la distance des planètes par rapport au Soleil

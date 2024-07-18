@@ -18,7 +18,7 @@ st.set_page_config(page_title="Outer Planets", page_icon="🪐", layout="wide")
 # Sidebar avec logo
 st.sidebar.image("./OP-logo-2.png", use_column_width=True)
 
-# Titre de la section
+# Titre
 st.title("🕰️ Découverte des exoplanètes")
 
 # Explication de la Goldilock Zone

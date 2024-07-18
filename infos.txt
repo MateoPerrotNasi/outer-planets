@@ -1,4 +1,4 @@
-Colonnes utiles (selon GPT) :
+Colonnes utiles :
 
 - Planet Name: Pour identifier la planète.
 - Host Name: Pour identifier l'étoile autour de laquelle la planète orbite.
@@ -104,5 +104,3 @@ Histoires et contributions des différentes installations de découverte.
 Conclusion
 Récapitulatif des points principaux.
 Perspectives futures dans la recherche des exoplanètes.
-
-En utilisant des visualisations graphiques, des cartes et des analyses statistiques, tu peux rendre ton storytelling captivant et informatif. Assure-toi de contextualiser les données et d'expliquer les termes techniques pour rendre ton récit accessible à tous.

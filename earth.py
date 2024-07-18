@@ -1,6 +1,6 @@
 import pandas as pd
 
-# Exemple de dataframe existant (vous avez déjà chargé vos données depuis un fichier CSV)
+# Dataframe existant`
 data = pd.read_csv('data/all_exoplanets_2021.csv')
 
 # Création des données pour les planètes du système solaire

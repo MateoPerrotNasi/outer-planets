@@ -20,7 +20,7 @@ st.sidebar.image("./OP-logo-2.png", use_column_width=True)
 
 host_names = ['Tous les systèmes'] + list(data['Planet Host'].unique())
 
-# Titre de la section
+# Titre
 st.title("🌟 Influence des Etoiles Hôtes")
 
 st.write("""

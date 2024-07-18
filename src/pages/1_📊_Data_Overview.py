@@ -12,7 +12,7 @@ st.set_page_config(page_title="Outer Planets", page_icon="🪐", layout="wide")
 # Sidebar avec logo
 st.sidebar.image("./OP-logo-2.png", use_column_width=True)
 
-# Titre et sous-titres principaux
+# Titre
 st.title("📊 Data Overview")
 st.write("""
 Découvrez les premières lignes du jeu de données et obtenez une vue d'ensemble des principales statistiques.
